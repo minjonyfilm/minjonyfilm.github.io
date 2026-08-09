@@ -933,3 +933,218 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ======================================================
+   SKILL DIRECTORY — COMPLETE NOTION-ALIGNED VERSION
+   ====================================================== */
+
+.skill-category-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.skill-category-icon {
+    width: 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.skill-pill {
+    gap: 0;
+}
+
+.skill-pill-icon {
+    width: 26px !important;
+    flex: 0 0 26px !important;
+    margin-right: 9px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill-pill-label {
+    min-width: 0;
+}
+
+.skill-emoji {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 24px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.software-badge {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+}
+
+.software-badge-tableau {
+    background: #fff;
+    color: #315b8a;
+}
+
+.software-badge-sql {
+    width: 30px;
+    background: #11364a;
+    color: #f0a34a;
+    font-size: 8px;
+}
+
+.software-badge-excel {
+    background: #187347;
+}
+
+.software-badge-powerpoint {
+    background: #d24726;
+}
+
+.software-badge-word {
+    background: #2b579a;
+}
+
+.software-badge-photoshop {
+    background: #001e36;
+    color: #31a8ff;
+}
+
+.software-badge-aftereffects {
+    background: #1f1c52;
+    color: #9999ff;
+}
+
+.software-badge-canva {
+    background: linear-gradient(135deg, #00c4cc, #7d2ae8);
+}
+
+.software-badge-jira {
+    background: #0c66e4;
+}
+
+.software-badge-figma {
+    background: #f2f2f2;
+    color: #1c1c1c;
+}
+
+.related-projects-head h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.related-projects-title-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.related-projects-title-icon .software-badge {
+    transform: scale(.82);
+    transform-origin: center;
+}
+
+.related-projects-title-icon .skill-emoji {
+    font-size: 16px;
+}
+
+.related-projects-empty {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #303030;
+    border-radius: 7px;
+    background: #1e1e1e;
+    color: #858585;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.related-projects-empty strong {
+    color: #a9a9a9;
+    font-weight: 650;
+}
+
+.related-projects-empty-mark {
+    color: #575757;
+}
+
+/* Project detail Skills become links back to the main Skills directory */
+.project-meta-label a.project-skills-index-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-meta-label a.project-skills-index-link:hover {
+    color: #efefef;
+}
+
+.project-skill-list .project-skill-link {
+    width: fit-content;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #d0d0d0;
+    text-decoration: none;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition: color .14s ease, text-decoration-color .14s ease;
+}
+
+.project-skill-list .project-skill-link:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #555;
+}
+
+.project-skill-list .project-skill-link-icon {
+    width: 20px;
+    flex: 0 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-skill-list .project-skill-link-icon .software-badge {
+    width: 19px;
+    height: 19px;
+    border-radius: 4px;
+    font-size: 8px;
+}
+
+.project-skill-list .project-skill-link-icon .software-badge-sql {
+    width: 23px;
+    font-size: 6px;
+}
+
+.project-skill-list .project-skill-link-icon .skill-emoji {
+    min-width: 18px;
+    height: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .skill-category-tabs {
+        flex-wrap: wrap;
+    }
+}
