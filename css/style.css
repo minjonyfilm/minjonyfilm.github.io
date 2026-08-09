@@ -1433,3 +1433,49 @@ h2 {
     object-fit: contain !important;
     background: transparent !important;
 }
+
+
+
+/* ======================================================
+   TABLEAU + EXTERNAL PROJECT LINKS
+   ====================================================== */
+
+.tableau-embed-intro {
+    margin-bottom: 12px;
+    color: #9d9d9d;
+    font-size: 12px;
+}
+
+.tableau-embed-shell {
+    width: 100%;
+    margin: 0 0 14px;
+    overflow: hidden;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #202020;
+}
+
+.tableau-embed-shell .tableauPlaceholder {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.tableau-embed-shell object.tableauViz {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+}
+
+.tableau-external-card {
+    margin-top: 12px;
+}
+
+.project-meta-value > a {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    .tableau-embed-shell {
+        border-radius: 4px;
+    }
+}
