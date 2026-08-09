@@ -8,10 +8,11 @@
 <title>Employee Attrition Analysis and Prediction | MINJEONG KIM</title>
 <link href="../css/style.css" rel="stylesheet"/>
 <style>
-        /* Employee Attrition V4 — styles only this page. */
+        /* Employee Attrition — same content width as all other project detail pages. */
         .project-page-shell {
-            width: min(940px, calc(100% - 40px));
+            width: min(760px, calc(100% - 48px)) !important;
         }
+
         .notion-migrated-content {
             color: #eeeeee;
             font-size: 14px;
@@ -296,7 +297,14 @@
                 row-gap: 8px !important;
             }
         }
-</style>
+
+        @media (max-width: 700px) {
+            .project-page-shell {
+                width: min(100% - 34px, 620px) !important;
+            }
+        }
+
+    </style>
 </head>
 <body>
 <main class="project-page-shell">
