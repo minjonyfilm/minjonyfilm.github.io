@@ -1377,3 +1377,59 @@ h2 {
     object-fit: contain;
     filter: none !important;
 }
+
+
+
+/* ======================================================
+   SITE IDENTITY + UNIUS ICON FIX
+   ====================================================== */
+
+.icon-unius {
+    -webkit-mask-image: url("../images/ui-icons/unius.svg");
+    mask-image: url("../images/ui-icons/unius.svg");
+}
+
+/* Main hero mark: thought bubble */
+.page-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    filter: none !important;
+    color: inherit;
+}
+
+.site-mark-image {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+/* UNIUS now follows the exact same monochrome project-icon sizing as every
+   other project. This also avoids the generic .project-card img thumbnail rule. */
+.project-card-title-icon.icon-unius {
+    width: 18px !important;
+    height: 18px !important;
+    flex: 0 0 18px !important;
+    margin-top: 2px;
+    color: #d0d0d0;
+}
+
+.project-detail-type-icon .icon-unius {
+    width: 52px;
+    height: 52px;
+    color: #d8d8d8;
+}
+
+/* Extra safety: an icon inside a project-card heading must never inherit the
+   large thumbnail-image sizing rule. */
+.project-card h3 img.project-card-title-logo {
+    width: 19px !important;
+    height: 19px !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    background: transparent !important;
+}
