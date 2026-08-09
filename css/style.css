@@ -1291,3 +1291,52 @@ h2 {
     width: 19px;
     height: 19px;
 }
+
+
+
+/* ======================================================
+   REAL SOFTWARE LOGO ASSETS
+   ====================================================== */
+
+.skill-software-logo {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    object-position: center;
+    flex: 0 0 25px;
+}
+
+.skill-pill-icon .skill-software-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.related-projects-title-icon .skill-software-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.project-skill-software-logo {
+    display: block;
+    width: 19px;
+    height: 19px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.project-skill-link-icon {
+    overflow: visible;
+}
+
+/* The Tableau mark is wider than most app icons; give it slightly more room
+   while keeping the text alignment consistent. */
+.skill-pill[data-skill="Tableau"] .skill-pill-icon .skill-software-logo {
+    width: 27px;
+    height: 24px;
+}
+
+/* Spotfire uses a square app mark and currently has no tagged featured project. */
+.skill-pill[data-skill="Spotfire"] .skill-software-logo {
+    border-radius: 5px;
+}

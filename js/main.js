@@ -150,8 +150,8 @@
     "software": [
         {
             "name": "Python",
-            "icon": "🐍",
-            "icon_type": "emoji",
+            "icon_type": "image",
+            "image": "images/software-logos/python.png",
             "projects": [
                 "netflix",
                 "boeing",
@@ -165,9 +165,8 @@
         },
         {
             "name": "Tableau",
-            "icon": "T",
-            "icon_type": "badge",
-            "brand": "tableau",
+            "icon_type": "image",
+            "image": "images/software-logos/tableau.png",
             "projects": [
                 "boeing",
                 "olympics",
@@ -175,26 +174,29 @@
             ]
         },
         {
+            "name": "Spotfire",
+            "icon_type": "image",
+            "image": "images/software-logos/spotfire.png",
+            "projects": []
+        },
+        {
             "name": "SQL",
-            "icon": "SQL",
-            "icon_type": "badge",
-            "brand": "sql",
+            "icon_type": "image",
+            "image": "images/software-logos/mysql.svg",
             "projects": []
         },
         {
             "name": "Microsoft Excel",
-            "icon": "X",
-            "icon_type": "badge",
-            "brand": "excel",
+            "icon_type": "image",
+            "image": "images/software-logos/excel.svg",
             "projects": [
                 "nib"
             ]
         },
         {
             "name": "Microsoft PowerPoint",
-            "icon": "P",
-            "icon_type": "badge",
-            "brand": "powerpoint",
+            "icon_type": "image",
+            "image": "images/software-logos/powerpoint.svg",
             "projects": [
                 "hcl",
                 "nib"
@@ -202,9 +204,8 @@
         },
         {
             "name": "Microsoft Word",
-            "icon": "W",
-            "icon_type": "badge",
-            "brand": "word",
+            "icon_type": "image",
+            "image": "images/software-logos/word.svg",
             "projects": []
         },
         {
@@ -227,9 +228,8 @@
         },
         {
             "name": "Canva",
-            "icon": "C",
-            "icon_type": "badge",
-            "brand": "canva",
+            "icon_type": "image",
+            "image": "images/software-logos/canva.png",
             "projects": [
                 "employee",
                 "unius"
@@ -237,18 +237,16 @@
         },
         {
             "name": "Jira",
-            "icon": "J",
-            "icon_type": "badge",
-            "brand": "jira",
+            "icon_type": "image",
+            "image": "images/software-logos/jira.png",
             "projects": [
                 "unius"
             ]
         },
         {
             "name": "Figma",
-            "icon": "F",
-            "icon_type": "badge",
-            "brand": "figma",
+            "icon_type": "image",
+            "image": "images/software-logos/figma.svg",
             "projects": [
                 "unius"
             ]
@@ -289,6 +287,15 @@
 
     function makeIcon(skill, extraClass = "") {
         const icon = document.createElement("span");
+
+        if (skill.icon_type === "image") {
+            const img = document.createElement("img");
+            img.className = `skill-software-logo ${extraClass}`.trim();
+            img.src = skill.image;
+            img.alt = "";
+            img.setAttribute("aria-hidden", "true");
+            return img;
+        }
 
         if (skill.icon_type === "badge") {
             icon.className = `software-badge software-badge-${skill.brand || "default"} ${extraClass}`.trim();
