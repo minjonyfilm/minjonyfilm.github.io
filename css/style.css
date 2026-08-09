@@ -1521,3 +1521,39 @@ h2 {
         height: 760px !important;
     }
 }
+
+
+/* ======================================================
+   BRAND ICONS FOR NOTEBOOK / EXTERNAL CARDS
+   ====================================================== */
+
+.external-preview-card {
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+}
+
+.external-preview-icon.brand-logo {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    margin-top: 2px;
+}
+
+.external-preview-icon.github {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%0A%3Cpath%20fill%3D%27%23bfbfbf%27%20d%3D%27M12%20.5a12%2012%200%200%200-3.79%2023.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72%201.2.08%201.84%201.25%201.84%201.25%201.07%201.83%202.8%201.3%203.49%201%20.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95%200-1.31.47-2.39%201.24-3.24-.12-.3-.54-1.52.12-3.16%200%200%201.01-.33%203.3%201.24A11.4%2011.4%200%200%201%2012%206.58c1.01%200%202.03.14%202.98.41%202.29-1.57%203.29-1.24%203.29-1.24.67%201.64.25%202.86.12%203.16.77.85%201.24%201.93%201.24%203.24%200%204.62-2.8%205.64-5.48%205.94.43.37.82%201.1.82%202.22v3.29c0%20.32.22.7.83.58A12%2012%200%200%200%2012%20.5Z%27/%3E%3C/svg%3E");
+}
+
+.external-preview-icon.tableau {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%0A%3Cg%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-width%3D%271.4%27%3E%0A%3Cg%20stroke%3D%27%23e97627%27%3E%0A%3Cpath%20d%3D%27M4%202.5v4%27/%3E%3Cpath%20d%3D%27M2%204.5h4%27/%3E%3Cpath%20d%3D%27M4%201.5v6%27/%3E%3Cpath%20d%3D%27M1%204.5h6%27/%3E%0A%3Cpath%20d%3D%27M20%202.5v4%27/%3E%3Cpath%20d%3D%27M18%204.5h4%27/%3E%3Cpath%20d%3D%27M20%201.5v6%27/%3E%3Cpath%20d%3D%27M17%204.5h6%27/%3E%0A%3Cpath%20d%3D%27M4%2017.5v4%27/%3E%3Cpath%20d%3D%27M2%2019.5h4%27/%3E%3Cpath%20d%3D%27M4%2016.5v6%27/%3E%3Cpath%20d%3D%27M1%2019.5h6%27/%3E%0A%3Cpath%20d%3D%27M20%2017.5v4%27/%3E%3Cpath%20d%3D%27M18%2019.5h4%27/%3E%3Cpath%20d%3D%27M20%2016.5v6%27/%3E%3Cpath%20d%3D%27M17%2019.5h6%27/%3E%0A%3C/g%3E%0A%3Cg%20stroke%3D%27%235d9bd3%27%3E%0A%3Cpath%20d%3D%27M12%206.5v4%27/%3E%3Cpath%20d%3D%27M10%208.5h4%27/%3E%3Cpath%20d%3D%27M12%205.5v6%27/%3E%3Cpath%20d%3D%27M9%208.5h6%27/%3E%0A%3Cpath%20d%3D%27M12%2012.5v4%27/%3E%3Cpath%20d%3D%27M10%2014.5h4%27/%3E%3Cpath%20d%3D%27M12%2011.5v6%27/%3E%3Cpath%20d%3D%27M9%2014.5h6%27/%3E%0A%3C/g%3E%0A%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%271.6%27%20fill%3D%27%23eb5255%27%20stroke%3D%27none%27/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.external-preview-icon.kaggle {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%0A%3Cpath%20fill%3D%27%2320beff%27%20d%3D%27M7%203.5c.83%200%201.5.67%201.5%201.5v7.17l5.1-5.42a1.5%201.5%200%201%201%202.2%202.03L12.39%2012.5l3.48%203.73a1.5%201.5%200%200%201-2.2%202.03L8.5%2012.73V19A1.5%201.5%200%200%201%207%2020.5%201.5%201.5%200%200%201%205.5%2019V5c0-.83.67-1.5%201.5-1.5Z%27/%3E%3C/svg%3E");
+}
