@@ -1340,3 +1340,40 @@ h2 {
 .skill-pill[data-skill="Spotfire"] .skill-software-logo {
     border-radius: 5px;
 }
+
+
+
+/* ======================================================
+   EXACT USER-SUPPLIED PROJECT ICONS + CONTACT ICONS
+   ====================================================== */
+
+.icon-contact-web {
+    -webkit-mask-image: url("../images/ui-icons/contact-web.svg");
+    mask-image: url("../images/ui-icons/contact-web.svg");
+}
+
+.icon-contact-mail {
+    -webkit-mask-image: url("../images/ui-icons/contact-mail.svg");
+    mask-image: url("../images/ui-icons/contact-mail.svg");
+}
+
+.contact-card-icon {
+    width: 18px !important;
+    height: 18px !important;
+    color: #b5b5b5;
+}
+
+.contact-card {
+    align-items: center;
+}
+
+.contact-card:hover .contact-card-icon {
+    color: #eeeeee;
+}
+
+/* UNIUS uses its own deep-blue vector instead of the monochrome mask system. */
+.unius-title-logo,
+.project-icon.unius-icon img {
+    object-fit: contain;
+    filter: none !important;
+}
