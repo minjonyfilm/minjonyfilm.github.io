@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Attrition Analysis and Prediction project by Minjeong Kim">
+    <title>Employee Attrition Analysis and Prediction | MINJEONG KIM</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .case-band {
+            margin: 34px 0 18px;
+            padding: 7px 10px;
+            background: #353535;
+            border-left: 3px solid #b9b9b9;
+            color: #f2f2f2;
+            font-size: 13px;
+            font-weight: 750;
+            letter-spacing: .02em;
+        }
+
+        .case-step {
+            margin: 0 0 28px;
+        }
+
+        .case-step h3 {
+            margin: 0 0 8px;
+            font-size: 19px;
+            color: #f1f1f1;
+        }
+
+        .case-step p,
+        .case-step li {
+            color: #e5e5e5;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .case-step ul {
+            margin-top: 8px;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 16px;
+        }
+
+        .insight-card {
+            background: #2a2a2a;
+            border: 1px solid #353535;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .insight-card strong {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 13px;
+        }
+
+        .insight-card p {
+            margin: 0;
+            color: #d8d8d8;
+            font-size: 12.5px;
+            line-height: 1.45;
+        }
+
+        .presentation-hero {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 12px 0 22px;
+            border-radius: 3px;
+        }
+
+        .slide-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .slide-gallery img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #343434;
+            background: #222;
+        }
+
+        @media (max-width: 700px) {
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .slide-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="project-page-shell">
+
+        <nav class="project-breadcrumb">
+            <a href="../index.html">MINJEONG KIM</a>
+            <span>/</span>
+            <a href="../index.html#projects">Projects</a>
+            <span>/</span>
+            <span>Employee Attrition Analysis and Prediction</span>
+        </nav>
+
+        <header class="project-header">
+            <div class="project-icon" aria-hidden="true">🧾</div>
+
+            <h1 class="project-title">Employee Attrition Analysis and Prediction</h1>
+
+            <div class="project-meta-grid">
+                <div class="project-meta-label">↗ Skills</div>
+                <div class="project-meta-value project-skill-list">
+                    <span>🐍 Python</span>
+                    <span>♞ Data Cleaning</span>
+                    <span>⌕ Data Analytics</span>
+                    <span>▥ Data Visualization</span>
+                    <span>♙ Machine Learning</span>
+                </div>
+
+                <div class="project-meta-label">🔗 GitHub</div>
+                <div class="project-meta-value">
+                    <a href="https://github.com/minjonyfilm/employee-attrition-analysis-and-prediction" target="_blank" rel="noreferrer">
+                        github.com/minjonyfilm/employee-attrition-analysis-and-prediction
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-divider"></div>
+
+        <img
+            class="project-cover-image"
+            src="../images/employee-attrition/cover.jpg"
+            alt="Employee Attrition Analysis and Prediction cover"
+        >
+
+        <section class="project-content-section">
+            <h2>Title</h2>
+            <p>Employee Attrition Analysis and Prediction</p>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Description</h2>
+            <p>
+                This project focuses on understanding employee attrition through exploratory
+                analysis and predictive modeling. The goal is to identify the characteristics
+                most associated with employees leaving the company and to compare multiple
+                machine-learning approaches for predicting attrition.
+            </p>
+            <p>
+                The analysis combines data exploration, preprocessing, feature engineering,
+                model training, hyperparameter tuning, model evaluation, and feature-importance
+                analysis to translate the dataset into practical HR insights.
+            </p>
+        </section>
+
+        <div class="case-band">📌 PROJECT SUMMARY</div>
+
+        <section class="project-content-section">
+            <p>
+                Employee turnover can create significant recruiting, training, and operational
+                costs. This project evaluates workforce data to uncover patterns related to
+                attrition and develops classification models that can help identify employees
+                with a higher likelihood of leaving.
+            </p>
+        </section>
+
+        <div class="case-band">📊 METHODOLOGY</div>
+
+        <section class="project-content-section">
+
+            <div class="case-step">
+                <h3>1. Exploratory Data Analysis (EDA)</h3>
+                <ul>
+                    <li>Reviewed feature distributions and target-class balance.</li>
+                    <li>Explored relationships between attrition and employee demographics, job characteristics, compensation, satisfaction, and tenure.</li>
+                    <li>Used visualizations to identify potentially important patterns and candidate predictors.</li>
+                </ul>
+            </div>
+
+            <div class="case-step">
+                <h3>2. Data Pre-processing</h3>
+                <ul>
+                    <li>Handled categorical variables and transformed features into model-ready form.</li>
+                    <li>Separated predictors and target labels and prepared training/validation datasets.</li>
+                    <li>Applied preprocessing consistently across candidate models.</li>
+                </ul>
+            </div>
+
+            <div class="case-step">
+                <h3>3. Model Selection and Training</h3>
+                <p>
+                    Multiple classification approaches were evaluated to compare predictive
+                    performance and model behavior.
+                </p>
+                <ul>
+                    <li>Decision Tree</li>
+                    <li>Logistic Regression</li>
+                    <li>Support Vector Machine (SVM)</li>
+                    <li>Neural Network</li>
+                    <li>Naive Bayes</li>
+                    <li>Random Forest</li>
+                    <li>Ensemble Models</li>
+                    <li>Gradient Boosting</li>
+                    <li>XGBoost</li>
+                    <li>k-Nearest Neighbors (k-NN)</li>
+                </ul>
+            </div>
+
+            <div class="case-step">
+                <h3>4. Hyperparameter Tuning</h3>
+                <ul>
+                    <li>Compared baseline model performance with tuned configurations.</li>
+                    <li>Adjusted model parameters to improve predictive performance while avoiding unnecessary complexity.</li>
+                </ul>
+            </div>
+
+            <div class="case-step">
+                <h3>5. Model Evaluation</h3>
+                <ul>
+                    <li>Compared candidate models using classification performance metrics.</li>
+                    <li>Reviewed confusion-matrix behavior to understand false-positive and false-negative tradeoffs.</li>
+                    <li>Selected the strongest model based on overall validation performance.</li>
+                </ul>
+            </div>
+
+            <div class="case-step">
+                <h3>6. Feature Importance Analysis</h3>
+                <ul>
+                    <li>Examined the variables most influential in predicting attrition.</li>
+                    <li>Translated model outputs into business-facing insights for retention strategy.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <div class="case-band">🛠 TOOLS</div>
+
+        <section class="project-content-section">
+            <div class="tool-line">
+                <span class="code-tag python">Python</span>
+                <span class="code-tag tableau">Pandas</span>
+                <span class="code-tag sql">NumPy</span>
+                <span class="code-tag excel">Matplotlib</span>
+                <span class="code-tag tableau">Seaborn</span>
+                <span class="code-tag sql">Scikit-learn</span>
+                <span class="code-tag tableau">XGBoost</span>
+            </div>
+        </section>
+
+        <div class="case-band">💡 KEY INSIGHTS & FINDINGS</div>
+
+        <section class="project-content-section">
+            <div class="insight-grid">
+                <div class="insight-card">
+                    <strong>Attrition Patterns</strong>
+                    <p>Attrition was not evenly distributed across employee groups, indicating meaningful workforce segments with higher risk.</p>
+                </div>
+
+                <div class="insight-card">
+                    <strong>Job & Career Factors</strong>
+                    <p>Role, career progression, tenure, and work-related conditions emerged as useful dimensions for understanding attrition behavior.</p>
+                </div>
+
+                <div class="insight-card">
+                    <strong>Model Comparison</strong>
+                    <p>Testing multiple algorithms made it possible to compare interpretability, predictive strength, and generalization.</p>
+                </div>
+
+                <div class="insight-card">
+                    <strong>Feature Importance</strong>
+                    <p>The final analysis highlighted the variables with the greatest influence on model predictions.</p>
+                </div>
+
+                <div class="insight-card">
+                    <strong>HR Application</strong>
+                    <p>Prediction results can support targeted retention initiatives instead of applying the same strategy to every employee.</p>
+                </div>
+
+                <div class="insight-card">
+                    <strong>Business Value</strong>
+                    <p>The project connects machine-learning outputs to practical workforce planning and employee-retention decisions.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="case-band">📦 OUTCOMES & DELIVERABLES</div>
+
+        <section class="project-content-section">
+            <ul>
+                <li>Completed end-to-end employee attrition analysis from EDA through model evaluation.</li>
+                <li>Compared a broad set of classification algorithms.</li>
+                <li>Identified important variables associated with employee attrition.</li>
+                <li>Produced a presentation summarizing the analytical process, findings, and recommendations.</li>
+            </ul>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Presentation</h2>
+
+            <img
+                class="presentation-hero"
+                src="../images/employee-attrition/presentation-title.jpg"
+                alt="Employee Attrition Prediction presentation title slide"
+            >
+
+            <div class="slide-gallery">
+                <img src="../images/employee-attrition/slide-01.jpg" alt="Employee Attrition presentation slide 1"><img src="../images/employee-attrition/slide-02.jpg" alt="Employee Attrition presentation slide 2"><img src="../images/employee-attrition/slide-03.jpg" alt="Employee Attrition presentation slide 3"><img src="../images/employee-attrition/slide-04.jpg" alt="Employee Attrition presentation slide 4"><img src="../images/employee-attrition/slide-05.jpg" alt="Employee Attrition presentation slide 5"><img src="../images/employee-attrition/slide-06.jpg" alt="Employee Attrition presentation slide 6"><img src="../images/employee-attrition/slide-07.jpg" alt="Employee Attrition presentation slide 7"><img src="../images/employee-attrition/slide-08.jpg" alt="Employee Attrition presentation slide 8"><img src="../images/employee-attrition/slide-09.jpg" alt="Employee Attrition presentation slide 9"><img src="../images/employee-attrition/slide-10.jpg" alt="Employee Attrition presentation slide 10"><img src="../images/employee-attrition/slide-11.jpg" alt="Employee Attrition presentation slide 11"><img src="../images/employee-attrition/slide-12.jpg" alt="Employee Attrition presentation slide 12">
+            </div>
+        </section>
+
+        <div class="project-bottom-nav">
+            <a href="../index.html#projects">← Back to Projects</a>
+        </div>
+
+    </main>
+</body>
+</html>
