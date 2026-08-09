@@ -41,7 +41,7 @@ a {
 }
 
 .page-shell {
-    width: min(920px, calc(100% - 48px));
+    width: min(880px, calc(100% - 48px));
     margin: 0 auto;
     padding: 105px 0 220px;
 }
