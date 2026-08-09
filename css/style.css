@@ -1479,3 +1479,45 @@ h2 {
         border-radius: 4px;
     }
 }
+
+
+/* ======================================================
+   TABLEAU DASHBOARD SIZE REFINEMENT
+   ====================================================== */
+
+/* Keep live dashboards visually secondary to the project write-up. */
+#viz-boeing-airbus-dashboard-shell,
+#viz-olympics-athlete-spotlight-shell {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Match the original published dashboard proportions at the reduced width. */
+@media (min-width: 701px) {
+    #viz-boeing-airbus-dashboard-shell object.tableauViz {
+        height: 485px !important;
+    }
+
+    #viz-olympics-athlete-spotlight-shell object.tableauViz {
+        height: 365px !important;
+    }
+}
+
+/* On smaller screens use the available width and let the mobile Tableau
+   layout retain more vertical space. */
+@media (max-width: 700px) {
+    #viz-boeing-airbus-dashboard-shell,
+    #viz-olympics-athlete-spotlight-shell {
+        max-width: 100%;
+    }
+
+    #viz-boeing-airbus-dashboard-shell object.tableauViz {
+        height: 900px !important;
+    }
+
+    #viz-olympics-athlete-spotlight-shell object.tableauViz {
+        height: 760px !important;
+    }
+}
