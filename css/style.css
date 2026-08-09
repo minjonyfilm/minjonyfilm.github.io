@@ -1557,3 +1557,64 @@ h2 {
 .external-preview-icon.kaggle {
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%0A%3Cpath%20fill%3D%27%2320beff%27%20d%3D%27M7%203.5c.83%200%201.5.67%201.5%201.5v7.17l5.1-5.42a1.5%201.5%200%201%201%202.2%202.03L12.39%2012.5l3.48%203.73a1.5%201.5%200%200%201-2.2%202.03L8.5%2012.73V19A1.5%201.5%200%200%201%207%2020.5%201.5%201.5%200%200%201%205.5%2019V5c0-.83.67-1.5%201.5-1.5Z%27/%3E%3C/svg%3E");
 }
+
+
+/* ======================================================
+   BOEING STATIC DASHBOARD + DATASET LINK
+   ====================================================== */
+
+.dataset-link {
+    width: fit-content;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 12px;
+    border: 1px solid #353535;
+    border-radius: 7px;
+    background: #202020;
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.dataset-link:hover {
+    background: #262626;
+    border-color: #484848;
+    color: #fff;
+}
+
+.dataset-link-icon {
+    color: #a8a8a8;
+    font-size: 15px;
+}
+
+.dashboard-static-link {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+}
+
+.dashboard-static-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #353535;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.dashboard-static-caption {
+    margin: 9px 0 14px !important;
+    color: #8f8f8f !important;
+    font-size: 11px !important;
+}
+
+@media (max-width: 700px) {
+    .dashboard-static-image {
+        border-radius: 4px;
+    }
+}
