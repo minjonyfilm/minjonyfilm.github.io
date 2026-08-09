@@ -206,6 +206,70 @@
             font-size: 12px;
         }
 
+
+        /* Restore Notion text colors more faithfully on the dark portfolio background. */
+        .notion-migrated-content mark[data-notion-highlight="default"] {
+            color: inherit !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content mark[data-notion-highlight="purple"] {
+            color: #c58bdc !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content mark[data-notion-highlight="yellow"] {
+            color: #d9b85c !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content mark[data-notion-highlight="teal"] {
+            color: #65b99a !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content mark[data-notion-highlight="blue"] {
+            color: #6da9df !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content mark[data-notion-highlight="orange"] {
+            color: #e39a58 !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content mark[data-notion-highlight="gray"] {
+            color: #aaa7a2 !important;
+            background: transparent !important;
+        }
+
+        .notion-migrated-content [data-notion-highlight="gray_background"],
+        .notion-migrated-content .block-color-gray_background {
+            background: #343434 !important;
+        }
+
+        /* Make presentation slides much larger: one slide per row on desktop. */
+        .notion-migrated-content .slide-row {
+            grid-template-columns: minmax(0, 1fr) !important;
+            gap: 24px !important;
+            margin: 24px 0 !important;
+        }
+
+        .notion-migrated-content .slide-row .column {
+            width: 100% !important;
+        }
+
+        .notion-migrated-content .slide-row figure.image {
+            width: 100%;
+            margin: 0 !important;
+        }
+
+        .notion-migrated-content .slide-row figure.image img {
+            width: 100% !important;
+            max-width: none !important;
+            height: auto !important;
+        }
+
         @media (max-width: 720px) {
             .notion-migrated-content .column-list.cols-3,
             .notion-migrated-content .column-list.cols-2 {
@@ -215,6 +279,11 @@
             .notion-migrated-content h1 {
                 font-size: 24px;
             }
+
+            .notion-migrated-content .slide-row {
+                grid-template-columns: 1fr !important;
+            }
+
         }
     </style>
 </head>
