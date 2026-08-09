@@ -337,7 +337,7 @@ h2 {
    PROJECT DETAIL PAGES
    ====================================================== */
 
-   .project-page-shell {
+.project-page-shell {
     width: min(820px, calc(100% - 48px));
     margin: 0 auto;
     padding: 28px 0 180px;
@@ -629,6 +629,101 @@ h2 {
     .result-grid {
         grid-template-columns: 1fr;
         gap: 28px;
+    }
+
+    .project-content-section h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* Netflix detail refinements */
+.project-page-shell {
+    width: min(760px, calc(100% - 48px));
+}
+
+.project-cover-image {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.netflix-result-image {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+}
+
+.result-grid {
+    grid-template-columns: 330px 1fr;
+    gap: 68px;
+}
+
+@media (max-width: 700px) {
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .netflix-result-image {
+        max-width: 100%;
+    }
+}
+
+
+
+/* ======================================================
+   SITEWIDE DETAIL PAGE REFINEMENTS
+   ====================================================== */
+
+/* Sticky top breadcrumb / header bar for project detail pages */
+.project-breadcrumb {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    margin-bottom: 54px;
+    padding: 18px 0 14px;
+    background: rgba(25, 25, 25, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2d2d2d;
+}
+
+/* Make spacing feel a little more unified across detail pages */
+.project-header {
+    margin-bottom: 36px;
+}
+
+.project-title {
+    margin-bottom: 24px;
+}
+
+.project-content-section h2 {
+    font-size: 27px;
+}
+
+/* Unified tool-chip color system across all project detail pages */
+.code-tag.pandas { color: rgba(154, 107, 180, 1); }           /* purple */
+.code-tag.numpy { color: rgba(203, 148, 52, 1); }             /* yellow/gold */
+.code-tag.matplotlib { color: rgba(80, 148, 110, 1); }        /* teal/green */
+.code-tag.seaborn { color: rgba(56, 125, 201, 1); }           /* blue */
+.code-tag.scikitlearn { color: rgba(210, 123, 45, 1); }       /* orange */
+.code-tag.imbalancedlearn { color: rgba(203, 148, 52, 1); }   /* yellow/gold */
+.code-tag.xgboost { color: rgba(56, 125, 201, 1); }           /* blue */
+.code-tag.tableaupink { color: rgba(193, 76, 138, 1); }       /* pink */
+.code-tag.streamlit { color: rgba(207, 81, 72, 1); }          /* red */
+.code-tag.powerpoint { color: rgba(210, 123, 45, 1); }        /* orange */
+
+/* Slightly more polished tool layout */
+.tool-line {
+    gap: 8px;
+}
+
+@media (max-width: 700px) {
+    .project-breadcrumb {
+        margin-bottom: 36px;
+        padding-top: 14px;
+        padding-bottom: 12px;
     }
 
     .project-content-section h2 {
