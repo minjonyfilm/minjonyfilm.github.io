@@ -41,7 +41,7 @@ a {
 }
 
 .page-shell {
-    width: min(880px, calc(100% - 48px));
+    width: min(840px, calc(100% - 48px));
     margin: 0 auto;
     padding: 105px 0 220px;
 }
@@ -78,14 +78,15 @@ h2 {
 
 .about-grid {
     display: grid;
-    grid-template-columns: minmax(220px, 300px) 1fr;
-    gap: 54px;
+    grid-template-columns: minmax(200px, 240px) 1fr;
+    gap: 46px;
     align-items: start;
 }
 
 .profile-photo {
     display: block;
     width: 100%;
+    max-width: 240px;
     aspect-ratio: 2 / 3;
     object-fit: cover;
     object-position: center;
@@ -284,7 +285,7 @@ h2 {
     }
 
     .profile-photo {
-        width: min(300px, 100%);
+        width: min(240px, 100%);
     }
 
     .project-grid {
