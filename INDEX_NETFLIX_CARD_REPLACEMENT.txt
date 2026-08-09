@@ -1,0 +1,11 @@
+Replace ONLY the Netflix project card block in index.html with this:
+
+<a class="project-card-link" href="projects/netflix.html">
+    <article class="project-card">
+        <img src="images/netflix.jpg" alt="Netflix recommendation project cover">
+        <div class="project-body">
+            <h3>🎬 Netflix Movie Recommendation</h3>
+            <p>This project delivers an interactive Netflix recommendation system, leveraging Streamlit alongside TF-IDF and cosine similarity to offer dynamic, personalized content suggestions.</p>
+        </div>
+    </article>
+</a>

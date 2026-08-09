@@ -332,3 +332,306 @@ h2 {
         display: none;
     }
 }
+
+/* ======================================================
+   PROJECT DETAIL PAGES
+   ====================================================== */
+
+   .project-page-shell {
+    width: min(820px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 28px 0 180px;
+}
+
+.project-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 86px;
+    color: #b5b5b5;
+    font-size: 12px;
+}
+
+.project-breadcrumb a {
+    color: #d0d0d0;
+    text-decoration: none;
+}
+
+.project-breadcrumb a:hover {
+    color: #fff;
+}
+
+.project-header {
+    margin-bottom: 34px;
+}
+
+.project-icon {
+    font-size: 54px;
+    line-height: 1;
+    margin-bottom: 24px;
+    filter: grayscale(1);
+}
+
+.project-title {
+    max-width: 760px;
+    margin: 0 0 20px;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+.project-meta-grid {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    gap: 20px 30px;
+    align-items: start;
+    color: #c8c8c8;
+    font-size: 13px;
+}
+
+.project-meta-label {
+    color: #a7a7a7;
+}
+
+.project-meta-value a {
+    color: #c8c8c8;
+    text-decoration: underline;
+    text-decoration-color: #575757;
+    text-underline-offset: 2px;
+}
+
+.project-skill-list {
+    display: grid;
+    gap: 7px;
+}
+
+.project-divider {
+    height: 1px;
+    background: #303030;
+    margin: 24px 0 38px;
+}
+
+.project-cover-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 0 0 44px;
+    border-radius: 2px;
+}
+
+.project-content-section {
+    margin: 0 0 38px;
+}
+
+.project-content-section h2 {
+    margin-bottom: 16px;
+    font-size: 28px;
+    letter-spacing: -0.025em;
+}
+
+.project-content-section p,
+.project-content-section li {
+    color: #efefef;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.project-content-section p {
+    margin: 0 0 14px;
+}
+
+.project-content-section ul {
+    margin: 0;
+    padding-left: 23px;
+}
+
+.project-content-section li {
+    margin-bottom: 5px;
+}
+
+.tool-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+}
+
+.code-tag.netflix-red {
+    color: #ef5555;
+}
+
+.external-preview-card {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: 17px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: background-color .15s ease;
+}
+
+.external-preview-card:hover {
+    background: #222;
+}
+
+.external-preview-card strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.external-preview-card p {
+    margin: 0 0 4px;
+    color: #c2c2c2;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.external-preview-card small {
+    color: #8c8c8c;
+    font-size: 11px;
+}
+
+.external-preview-icon {
+    font-size: 24px;
+    color: #bdbdbd;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, .85fr) 1fr;
+    gap: 58px;
+    align-items: start;
+}
+
+.netflix-demo-card {
+    min-height: 420px;
+    padding: 26px 23px;
+    background: #0b0f16;
+    color: #fff;
+}
+
+.netflix-logo-text {
+    color: #e50914;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -0.045em;
+    margin-bottom: 10px;
+}
+
+.demo-title {
+    font-size: 18px;
+    font-weight: 750;
+    margin-bottom: 28px;
+}
+
+.netflix-demo-card label {
+    display: block;
+    margin-bottom: 7px;
+    color: #cacaca;
+    font-size: 10px;
+}
+
+.fake-select {
+    width: 100%;
+    padding: 8px 9px;
+    margin-bottom: 10px;
+    background: #202632;
+    border-radius: 4px;
+    color: #e9e9e9;
+    font-size: 11px;
+}
+
+.fake-button {
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    border-radius: 4px;
+    background: #303744;
+    color: #cfcfcf;
+    font-size: 10px;
+}
+
+.fake-result {
+    display: grid;
+    gap: 7px;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid #2e3440;
+    color: #d8d8d8;
+    font-size: 11px;
+}
+
+.fake-result strong {
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.result-list {
+    padding-left: 22px;
+}
+
+.result-list li {
+    margin-bottom: 16px;
+}
+
+.project-bottom-nav {
+    margin-top: 70px;
+    padding-top: 28px;
+    border-top: 1px solid #303030;
+}
+
+.project-bottom-nav a {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+.project-bottom-nav a:hover {
+    color: #fff;
+}
+
+/* clickable project cards on the home page */
+.project-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card-link .project-card {
+    height: 100%;
+}
+
+@media (max-width: 700px) {
+    .project-page-shell {
+        width: min(100% - 34px, 620px);
+        padding-top: 18px;
+    }
+
+    .project-breadcrumb {
+        margin-bottom: 55px;
+    }
+
+    .project-meta-grid {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .project-meta-value {
+        margin-bottom: 13px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .project-content-section h2 {
+        font-size: 24px;
+    }
+}

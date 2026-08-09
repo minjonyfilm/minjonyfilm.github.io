@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix Movie Recommendation project by Minjeong Kim">
+    <title>Netflix Movie Recommendation | MINJEONG KIM</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main class="project-page-shell">
+
+        <nav class="project-breadcrumb">
+            <a href="../index.html">MINJEONG KIM</a>
+            <span>/</span>
+            <a href="../index.html#projects">Projects</a>
+            <span>/</span>
+            <span>Netflix Movie Recommendation</span>
+        </nav>
+
+        <header class="project-header">
+            <div class="project-icon" aria-hidden="true">🎬</div>
+
+            <h1 class="project-title">Netflix Movie Recommendation</h1>
+
+            <div class="project-meta-grid">
+                <div class="project-meta-label">↗ Skills</div>
+                <div class="project-meta-value project-skill-list">
+                    <span>🐍 Python</span>
+                    <span>♞ Data Cleaning</span>
+                    <span>⌕ Data Analytics</span>
+                    <span>▥ Data Visualization</span>
+                    <span>♙ Machine Learning</span>
+                </div>
+
+                <div class="project-meta-label">🔗 GitHub</div>
+                <div class="project-meta-value">
+                    <a href="https://github.com/minjonyfilm/netflix-content-recommender-system"
+                       target="_blank" rel="noreferrer">
+                        github.com/minjonyfilm/netflix-content-recommender-system
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="project-divider"></div>
+
+        <img
+            class="project-cover-image"
+            src="../images/netflix.jpg"
+            alt="Netflix Content Recommendation System cover"
+        >
+
+        <section class="project-content-section">
+            <h2>Title</h2>
+            <p>Netflix Content Recommender System</p>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Description</h2>
+            <p>
+                The project aimed to design a recommendation system for Netflix content,
+                be it movies or TV shows. Starting with data cleaning and preprocessing,
+                missing values in various columns were handled, and date-related features
+                were engineered. In the exploratory data analysis phase, the distribution
+                of content types and ratings was visualized, providing insights into the
+                nature of available content.
+            </p>
+
+            <p>
+                Feature engineering led to the creation of the <strong>content</strong>
+                feature, a combination of several textual attributes. The recommendation
+                system transforms this feature into a TF-IDF matrix and calculates cosine
+                similarity between items. This enables personalized recommendations based
+                on content similarity.
+            </p>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data cleaning and pre-processing</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Data visualization: bar chart</li>
+                <li>Feature engineering</li>
+                <li>Content-based recommendation system</li>
+                <li>Natural Language Processing (NLP) with TF-IDF Transformation</li>
+                <li>Cosine Similarity Calculation</li>
+                <li>Interactive Web Application Development with Streamlit</li>
+            </ul>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Tools</h2>
+            <div class="tool-line">
+                <span class="code-tag python">Python</span>
+                <span class="code-tag tableau">Pandas</span>
+                <span class="code-tag excel">Matplotlib</span>
+                <span class="code-tag sql">Scikit-learn</span>
+                <span class="code-tag netflix-red">Streamlit</span>
+            </div>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Notebook</h2>
+
+            <a class="external-preview-card"
+               href="https://github.com/minjonyfilm/netflix-content-recommender-system"
+               target="_blank" rel="noreferrer">
+                <div class="external-preview-icon">◉</div>
+                <div>
+                    <strong>GitHub - minjonyfilm/netflix-content-recommender-system</strong>
+                    <p>
+                        Contribute to minjonyfilm/netflix-content-recommender-system development
+                        by creating an account on GitHub.
+                    </p>
+                    <small>github.com/minjonyfilm/netflix-content-recommender-system</small>
+                </div>
+            </a>
+        </section>
+
+        <section class="project-content-section">
+            <h2>Results</h2>
+
+            <div class="result-grid">
+                <div class="netflix-demo-card">
+                    <div class="netflix-logo-text">NETFLIX</div>
+                    <div class="demo-title">Movie/Show Recommendation System</div>
+
+                    <label for="demo-title-select">Choose a Movie from the List</label>
+                    <div class="fake-select" id="demo-title-select">Inception</div>
+
+                    <button type="button" class="fake-button" disabled>Get Recommendations</button>
+
+                    <div class="fake-result">
+                        <strong>Movies You May Also Like</strong>
+                        <span>Interstellar</span>
+                        <span>The Prestige</span>
+                        <span>Shutter Island</span>
+                        <span>Memento</span>
+                    </div>
+                </div>
+
+                <ul class="result-list">
+                    <li>
+                        Developed a content-based recommendation system with an interactive web interface,
+                        capable of suggesting similar movies or TV shows based on user selection.
+                    </li>
+                    <li>
+                        Uncovered insights into the nature of content available on Netflix through data visualization.
+                    </li>
+                    <li>
+                        Successfully transformed textual content attributes into a format suitable for similarity
+                        computations, paving the way for personalized content recommendations.
+                    </li>
+                    <li>
+                        Enhanced the accessibility and usability of the recommendation system through the integration
+                        of Streamlit, providing a seamless experience for users to interact with the model.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="project-bottom-nav">
+            <a href="../index.html#projects">← Back to Projects</a>
+        </div>
+
+    </main>
+</body>
+</html>
