@@ -8,11 +8,22 @@
 <title>Employee Attrition Analysis and Prediction | MINJEONG KIM</title>
 <link href="../css/style.css" rel="stylesheet"/>
 <style>
-        /* Employee Attrition — same content width as all other project detail pages. */
+
+        /* FINAL WIDTH FIX:
+           exactly match the shared project-detail width used by Olympics,
+           Netflix, Boeing/Airbus, Horses, and Hotel Booking. */
         .project-page-shell {
             width: min(760px, calc(100% - 48px)) !important;
         }
 
+        @media (max-width: 700px) {
+            .project-page-shell {
+                width: min(100% - 34px, 620px) !important;
+            }
+        }
+
+        /* Employee Attrition V4 — styles only this page. */
+        
         .notion-migrated-content {
             color: #eeeeee;
             font-size: 14px;
@@ -283,28 +294,17 @@
 
         /* The case-study body is intentionally wider than the simple project pages
            so two 16:9 presentation slides have more usable visual size. */
-        .project-page-shell {
-            width: min(1040px, calc(100% - 40px)) !important;
-        }
+        
 
         @media (max-width: 700px) {
-            .project-page-shell {
-                width: min(100% - 24px, 700px) !important;
-            }
+            
 
             .notion-migrated-content .slide-row {
                 column-gap: 8px !important;
                 row-gap: 8px !important;
             }
         }
-
-        @media (max-width: 700px) {
-            .project-page-shell {
-                width: min(100% - 34px, 620px) !important;
-            }
-        }
-
-    </style>
+</style>
 </head>
 <body>
 <main class="project-page-shell">
