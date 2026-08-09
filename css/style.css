@@ -1148,3 +1148,146 @@ h2 {
         flex-wrap: wrap;
     }
 }
+
+
+
+/* ======================================================
+   CONSISTENT MONOCHROME UI + PROJECT ICON SYSTEM
+   ====================================================== */
+
+.ui-mask-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex: 0 0 auto;
+    background-color: currentColor;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.icon-expertise {
+    -webkit-mask-image: url("../images/ui-icons/expertise.svg");
+    mask-image: url("../images/ui-icons/expertise.svg");
+}
+.icon-software {
+    -webkit-mask-image: url("../images/ui-icons/software.svg");
+    mask-image: url("../images/ui-icons/software.svg");
+}
+.icon-language {
+    -webkit-mask-image: url("../images/ui-icons/language.svg");
+    mask-image: url("../images/ui-icons/language.svg");
+}
+.icon-featured {
+    -webkit-mask-image: url("../images/ui-icons/featured.svg");
+    mask-image: url("../images/ui-icons/featured.svg");
+}
+.icon-movie {
+    -webkit-mask-image: url("../images/ui-icons/movie.svg");
+    mask-image: url("../images/ui-icons/movie.svg");
+}
+.icon-plane {
+    -webkit-mask-image: url("../images/ui-icons/plane.svg");
+    mask-image: url("../images/ui-icons/plane.svg");
+}
+.icon-horse {
+    -webkit-mask-image: url("../images/ui-icons/horse.svg");
+    mask-image: url("../images/ui-icons/horse.svg");
+}
+.icon-medal {
+    -webkit-mask-image: url("../images/ui-icons/medal.svg");
+    mask-image: url("../images/ui-icons/medal.svg");
+}
+.icon-hotel {
+    -webkit-mask-image: url("../images/ui-icons/hotel.svg");
+    mask-image: url("../images/ui-icons/hotel.svg");
+}
+.icon-badge {
+    -webkit-mask-image: url("../images/ui-icons/badge.svg");
+    mask-image: url("../images/ui-icons/badge.svg");
+}
+.icon-robot {
+    -webkit-mask-image: url("../images/ui-icons/robot.svg");
+    mask-image: url("../images/ui-icons/robot.svg");
+}
+.icon-chart {
+    -webkit-mask-image: url("../images/ui-icons/chart.svg");
+    mask-image: url("../images/ui-icons/chart.svg");
+}
+
+.skill-category-icon,
+.featured-tab-icon {
+    width: 18px !important;
+    height: 18px !important;
+    color: currentColor;
+}
+
+#projects .view-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-card h3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.project-card-title-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    color: #d0d0d0;
+}
+
+.project-card-title-logo {
+    width: 19px;
+    height: 19px;
+    margin-top: 2px;
+    object-fit: contain;
+    flex: 0 0 19px;
+}
+
+.unius-title-logo {
+    filter: none;
+}
+
+.project-detail-type-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #d8d8d8;
+}
+
+.project-detail-type-icon .ui-mask-icon {
+    width: 52px;
+    height: 52px;
+}
+
+.project-icon.unius-icon img {
+    filter: none !important;
+}
+
+/* Keep the UNIUS logo its original deep-blue color. */
+.project-icon.unius-icon {
+    background: transparent !important;
+}
+
+/* Software logo slot: ready for user-provided image assets */
+.skill-software-logo,
+.project-skill-software-logo {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.project-skill-software-logo {
+    width: 19px;
+    height: 19px;
+}
