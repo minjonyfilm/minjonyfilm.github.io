@@ -1,0 +1,11 @@
+Replace the current Hotel Booking project card in index.html with this block:
+
+<a class="project-card-link" href="projects/hotel-booking.html">
+    <article class="project-card">
+        <img src="images/hotel-booking.jpg" alt="Hotel booking project cover">
+        <div class="project-body">
+            <h3>⚑ Hotel Booking Cancellation Analysis and Prediction</h3>
+            <p>This project employs logistic regression, random forest, XGBoost, and kNN to predict hotel booking cancellations, aiding operational and revenue strategies.</p>
+        </div>
+    </article>
+</a>
