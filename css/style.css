@@ -730,3 +730,15 @@ h2 {
         font-size: 24px;
     }
 }
+
+
+/* Unified tool-chip weight: match Employee Attrition */
+.project-content-section .tool-line .code-tag {
+    font-weight: 750;
+}
+
+/* Keep the same bold weight even when a project uses a custom tool class */
+.project-content-section .tool-line strong,
+.project-content-section .tool-line b {
+    font-weight: 750;
+}

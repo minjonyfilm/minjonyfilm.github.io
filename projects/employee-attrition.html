@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Employee Attrition Analysis and Prediction project by Minjeong Kim">
-    <title>Employee Attrition Analysis and Prediction | MINJEONG KIM</title>
-    <link rel="stylesheet" href="../css/style.css">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Employee Attrition Analysis and Prediction project by Minjeong Kim" name="description"/>
+<title>Employee Attrition Analysis and Prediction | MINJEONG KIM</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<style>
         /* Employee Attrition V4 — styles only this page. */
         .project-page-shell {
             width: min(940px, calc(100% - 40px));
@@ -247,42 +247,84 @@
                 font-size: 24px;
             }
         }
-    </style>
+    
+
+        /* V5: presentation gallery size fix */
+        .notion-migrated-content .slide-row {
+            width: 100% !important;
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            column-gap: 16px !important;
+            row-gap: 16px !important;
+            align-items: stretch !important;
+        }
+
+        .notion-migrated-content .slide-row > .column {
+            width: 100% !important;
+            min-width: 0 !important;
+            max-width: none !important;
+        }
+
+        .notion-migrated-content .slide-row figure.image,
+        .notion-migrated-content .slide-row figure,
+        .notion-migrated-content .slide-row a {
+            width: 100% !important;
+            max-width: none !important;
+            margin: 0 !important;
+        }
+
+        .notion-migrated-content .slide-row img {
+            display: block !important;
+            width: 100% !important;
+            max-width: none !important;
+            height: auto !important;
+            object-fit: contain !important;
+        }
+
+        /* The case-study body is intentionally wider than the simple project pages
+           so two 16:9 presentation slides have more usable visual size. */
+        .project-page-shell {
+            width: min(1040px, calc(100% - 40px)) !important;
+        }
+
+        @media (max-width: 700px) {
+            .project-page-shell {
+                width: min(100% - 24px, 700px) !important;
+            }
+
+            .notion-migrated-content .slide-row {
+                column-gap: 8px !important;
+                row-gap: 8px !important;
+            }
+        }
+</style>
 </head>
-
 <body>
-    <main class="project-page-shell">
-
-        <nav class="project-breadcrumb">
-            <a href="../index.html">MINJEONG KIM</a>
-            <span>/</span>
-            <a href="../index.html#projects">Projects</a>
-            <span>/</span>
-            <span>Employee Attrition Analysis and Prediction</span>
-        </nav>
-
-        <header class="project-header">
-            <div class="project-icon" aria-hidden="true">▣</div>
-
-            <h1 class="project-title">Employee Attrition Analysis and Prediction</h1>
-
-            <div class="project-meta-grid">
-                <div class="project-meta-label">↗ Skills</div>
-                <div class="project-meta-value project-skill-list">
-                    <span>🐍 Python</span>
-                    <span>♞ Data Cleaning</span>
-                    <span>⌕ Data Analytics</span>
-                    <span>▥ Data Visualization</span>
-                    <span>♙ Machine Learning</span>
-                    <span>🎨 Canva</span>
-                </div>
-            </div>
-        </header>
-
-        <div class="project-divider"></div>
-
-        <div class="notion-migrated-content">
-            <figure class="image hero-cover" data-notion-image="Employee%20Attrition%20Analysis%20and%20Prediction/11.png" dir="ltr" id="1cc59aaf-e804-8024-b92f-e92a1cc4d856"><a href="../images/employee-attrition/11.png" rel="noreferrer" target="_blank"><img src="../images/employee-attrition/11.png"/></a></figure><h1 class="" dir="auto" id="1e259aaf-e804-801a-892b-c65ac5c3a7a3">Title</h1><p class="" dir="auto" id="1e259aaf-e804-80df-b772-c0abb318cb17">Employee Attrition Analysis and Prediction</p><h1 class="" dir="auto" id="1e259aaf-e804-804a-84f2-ea9934c2c97f"><mark class="highlight-default" data-notion-highlight="default">Description</mark></h1><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-800f-b5f9-fb5972ac05c0"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Project Duration</strong></mark><mark class="highlight-default" data-notion-highlight="default">: 10/2023 – 12/2023</mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-8061-9d40-ea5901fe98b8"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Project Type</strong></mark><mark class="highlight-default" data-notion-highlight="default">: </mark><mark class="highlight-purple" data-notion-highlight="purple"><strong>Data Analytics &amp; Machine Learning</strong></mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-8091-ab27-c691e8eb6b20"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Team</strong></mark><mark class="highlight-default" data-notion-highlight="default">: Alok Krishnan, Mangesh Patil, Shruthi Sunil</mark></li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8010-9607-f2460f3378d0"><li style="list-style-type:disc"><strong>My Role: </strong><mark class="highlight-purple" data-notion-highlight="purple"><strong>Data Analyst – Performed EDA, decision tree and logistic regression modeling, and created a final PowerPoint with insights.</strong></mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-80ef-b1ca-e100ded5f773"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Contribution</strong></mark><mark class="highlight-default" data-notion-highlight="default">: 100%</mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-8020-b95f-c799a356b858"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Deliverables:</strong></mark><mark class="highlight-default" data-notion-highlight="default"> Final PowerPoint presentation</mark></li></ul><p class="" dir="auto" id="1e259aaf-e804-8098-98cc-d81c77ede197">
+<main class="project-page-shell">
+<nav class="project-breadcrumb">
+<a href="../index.html">MINJEONG KIM</a>
+<span>/</span>
+<a href="../index.html#projects">Projects</a>
+<span>/</span>
+<span>Employee Attrition Analysis and Prediction</span>
+</nav>
+<header class="project-header">
+<div aria-hidden="true" class="project-icon">▣</div>
+<h1 class="project-title">Employee Attrition Analysis and Prediction</h1>
+<div class="project-meta-grid">
+<div class="project-meta-label">↗ Skills</div>
+<div class="project-meta-value project-skill-list">
+<span>🐍 Python</span>
+<span>♞ Data Cleaning</span>
+<span>⌕ Data Analytics</span>
+<span>▥ Data Visualization</span>
+<span>♙ Machine Learning</span>
+<span>🎨 Canva</span>
+</div>
+</div>
+</header>
+<div class="project-divider"></div>
+<div class="notion-migrated-content">
+<figure class="image hero-cover" data-notion-image="Employee%20Attrition%20Analysis%20and%20Prediction/11.png" dir="ltr" id="1cc59aaf-e804-8024-b92f-e92a1cc4d856"><a href="../images/employee-attrition/11.png" rel="noreferrer" target="_blank"><img src="../images/employee-attrition/11.png"/></a></figure><h1 class="" dir="auto" id="1e259aaf-e804-801a-892b-c65ac5c3a7a3">Title</h1><p class="" dir="auto" id="1e259aaf-e804-80df-b772-c0abb318cb17">Employee Attrition Analysis and Prediction</p><h1 class="" dir="auto" id="1e259aaf-e804-804a-84f2-ea9934c2c97f"><mark class="highlight-default" data-notion-highlight="default">Description</mark></h1><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-800f-b5f9-fb5972ac05c0"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Project Duration</strong></mark><mark class="highlight-default" data-notion-highlight="default">: 10/2023 – 12/2023</mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-8061-9d40-ea5901fe98b8"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Project Type</strong></mark><mark class="highlight-default" data-notion-highlight="default">: </mark><mark class="highlight-purple" data-notion-highlight="purple"><strong>Data Analytics &amp; Machine Learning</strong></mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-8091-ab27-c691e8eb6b20"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Team</strong></mark><mark class="highlight-default" data-notion-highlight="default">: Alok Krishnan, Mangesh Patil, Shruthi Sunil</mark></li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8010-9607-f2460f3378d0"><li style="list-style-type:disc"><strong>My Role: </strong><mark class="highlight-purple" data-notion-highlight="purple"><strong>Data Analyst – Performed EDA, decision tree and logistic regression modeling, and created a final PowerPoint with insights.</strong></mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-80ef-b1ca-e100ded5f773"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Contribution</strong></mark><mark class="highlight-default" data-notion-highlight="default">: 100%</mark></li></ul><ul class="bulleted-list" dir="auto" id="1e259aaf-e804-8020-b95f-c799a356b858"><li style="list-style-type:disc"><mark class="highlight-default" data-notion-highlight="default"><strong>Deliverables:</strong></mark><mark class="highlight-default" data-notion-highlight="default"> Final PowerPoint presentation</mark></li></ul><p class="" dir="auto" id="1e259aaf-e804-8098-98cc-d81c77ede197">
 </p><blockquote class="block-color-gray_background quote-large" data-notion-highlight="gray_background" dir="auto" id="1e259aaf-e804-80e6-8663-de193d97276e"><mark class="highlight-default" data-notion-highlight="default">🧩 </mark><mark class="highlight-default" data-notion-highlight="default"><strong>PROJECT SUMMARY</strong></mark></blockquote><hr dir="auto" id="1e259aaf-e804-80e3-8197-d72469c04a50"/><p class="" dir="auto" id="1e359aaf-e804-801b-9d15-c1a129b6488c">Employee attrition is a major challenge for many organizations, leading to higher recruitment costs, loss of knowledge, and decreased morale.</p><p class="" dir="auto" id="1e359aaf-e804-8082-b035-f5b5649e5704">In this project, we developed a machine learning solution to <mark class="highlight-purple" data-notion-highlight="purple"><strong>predict employee attrition</strong></mark> using supervised classification models. By accurately forecasting which employees are at risk of leaving, organizations can proactively implement retention strategies, improve employee experience, and optimize workforce planning.</p><p class="" dir="auto" id="1e359aaf-e804-805f-be7b-ec31b83b52ee">Our work covered the entire data science lifecycle, from data exploration to model deployment planning, resulting in a high-performing predictive model ready for integration.</p><p class="" dir="auto" id="1e259aaf-e804-8076-ada5-c48b8cb04892">
 </p><blockquote class="block-color-gray_background quote-large" data-notion-highlight="gray_background" dir="auto" id="1e259aaf-e804-8096-a5e8-f0345074c48b"><mark class="highlight-default" data-notion-highlight="default">📊 </mark><mark class="highlight-default" data-notion-highlight="default"><strong>METHODOLOGY</strong></mark></blockquote><hr dir="auto" id="1e259aaf-e804-8015-a432-f63395c6e4a6"/><p class="" dir="auto" id="1e359aaf-e804-8095-8087-c4a7fdf57335">We used a structured machine learning workflow covering exploratory analysis, data pre-processing, model selection and training, evaluation, and feature importance analysis to predict employee attrition effectively.</p><h2 class="" dir="auto" id="1e359aaf-e804-80dd-a515-da82f460f334">1. Exploratory Data Analysis (EDA)</h2><p class="" dir="auto" id="1e359aaf-e804-80e7-8bec-ed504ef172fa">We conducted a detailed exploratory data analysis to validate assumptions, understand feature distributions, and detect key patterns influencing attrition.</p><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80fb-8568-d3a2b0115e18"><li style="list-style-type:disc"><strong>Visual Findings:</strong><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80d5-92b0-d68b0715dc3d"><li style="list-style-type:circle"><strong>Distance from Home</strong>: Employees who lived farther from the workplace had a significantly higher attrition rate (Box Plot).</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-806c-917c-d545fb3c01ee"><li style="list-style-type:circle"><strong>Education Level</strong>: Higher education levels correlated with lower attrition rates (Bar Chart).</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-801b-8dfb-fc822e21e6c3"><li style="list-style-type:circle"><strong>Age</strong>: Younger employees were more likely to leave compared to older employees (Box Plot).</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80d7-9fdd-dec43d6ed194"><li style="list-style-type:circle"><strong>Work-Life Balance</strong>: Poor work-life balance was associated with higher attrition (Bar Chart).</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80b8-af0a-f62307b46d91"><li style="list-style-type:circle"><strong>Job Satisfaction</strong>: Lower job satisfaction strongly correlated with increased likelihood of leaving (Bar Chart).</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8088-853f-d1cec668ffec"><li style="list-style-type:circle"><strong>Years at Company</strong>: Employees with fewer years at the company showed higher attrition (Box Plot).</li></ul></li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80ac-a218-dc13b49b0731"><li style="list-style-type:disc"><strong>Correlation Analysis:</strong><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8065-bc81-cb77d8fc92a7"><li style="list-style-type:circle"><strong>Top 3 Features with Highest Positive Correlation to Attrition</strong>:<ul class="bulleted-list" dir="auto" id="1e359aaf-e804-809d-9918-cd44cfa1aec4"><li style="list-style-type:square">Distance From Home</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80bd-b9c8-cf07bd1b60ba"><li style="list-style-type:square">Number of Companies Worked</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80f9-8187-c19f1ae5b7b2"><li style="list-style-type:square">Monthly Rate</li></ul></li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8050-a00f-f22315f12c91"><li style="list-style-type:circle"><strong>Top 3 Features with Highest Negative Correlation to Attrition</strong>:<ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80d4-b0a5-caec670f4743"><li style="list-style-type:square">Total Working Years</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8088-a223-cd1aaac61931"><li style="list-style-type:square">Job Level</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8001-ade3-e7f8e3cb3c95"><li style="list-style-type:square">Years in Current Role</li></ul></li></ul></li></ul><p class="" dir="auto" id="1e359aaf-e804-8076-8c62-d2e4a05b7e09">Visualizations such as bar plots, box plots, and correlation matrices were used to validate these patterns and support feature selection for modeling.</p><h2 class="" dir="auto" id="1e359aaf-e804-8027-9f42-f2e8a82b4879">2. Data Pre-processing</h2><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-804e-9107-e47ac0028b1f"><li style="list-style-type:disc"><strong>Data Encoding</strong>: Categorical variables were encoded to numerical formats using one-hot encoding techniques.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80a5-bbb3-e9cb1bc5e8d1"><li style="list-style-type:disc"><strong>Feature Scaling</strong>: Continuous variables were standardized to ensure model convergence and comparability across features.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8097-85c4-e0d039fcf75f"><li style="list-style-type:disc"><strong>Data Balancing</strong>: Addressed class imbalance using oversampling techniques to improve the minority class (attrition = "Yes") representation.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8029-b5da-c9b2a8d256da"><li style="list-style-type:disc"><strong>Data Partitioning</strong>: The dataset was split into training and testing subsets (80% train, 20% test) with a random seed for reproducibility.</li></ul><h2 class="" dir="auto" id="1e359aaf-e804-80d7-942c-efb06e6383df">3. Model Selection and Training</h2><p class="" dir="auto" id="1e359aaf-e804-80ba-9f59-f78480aa4665">We experimented with a wide range of classification algorithms to identify the best model for attrition prediction:</p><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80c6-93df-e4cb41166e84"><li style="list-style-type:disc">Decision Tree</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80b0-9e91-ff4dede91067"><li style="list-style-type:disc">Logistic Regression</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80a8-8b27-f8c32ecd5340"><li style="list-style-type:disc">Support Vector Machine (SVM)</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80fa-a284-c786d20ee6d4"><li style="list-style-type:disc">Neural Networks</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80fd-bbbe-f555ecba3c31"><li style="list-style-type:disc">Naive Bayes</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80a9-aba5-dffd29bd313c"><li style="list-style-type:disc">Random Forest</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8081-9ce8-f367b0093843"><li style="list-style-type:disc">Ensemble Models</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8088-a986-fce88bd17d7e"><li style="list-style-type:disc">Gradient Boosting</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8020-aef6-c62bab9c36bd"><li style="list-style-type:disc">XGBoost</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-800e-a329-c6421064e6e2"><li style="list-style-type:disc">k-Nearest Neighbors (k-NN)</li></ul><p class="" dir="auto" id="1e359aaf-e804-8087-bed3-e46ac620c8c6">Each model was initially trained using default settings and then fine-tuned through hyperparameter optimization.</p><h2 class="" dir="auto" id="1e359aaf-e804-80ea-8f92-db9f62e62360">4. Hyper-parameter Tuning</h2><p class="" dir="auto" id="1e359aaf-e804-804b-bb84-f023ebeba082">Model performance was enhanced through:</p><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-803a-9981-c97ebcdb3fdd"><li style="list-style-type:disc"><strong>Grid Search</strong>: Exhaustively explored combinations of hyperparameters to identify the best-performing settings.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-803f-bac3-f8df2199f7cb"><li style="list-style-type:disc"><strong>Random Search</strong>: Randomly sampled hyperparameter space for faster optimization where exhaustive search was computationally expensive.</li></ul><h2 class="" dir="auto" id="1e359aaf-e804-80c2-950a-c37a59cf2643">5. Model Evaluation</h2><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8099-b327-fe916082e934"><li style="list-style-type:disc"><strong>Evaluation Metrics</strong>: Models were assessed using Accuracy, Precision, Recall, and F1-score to ensure balanced performance between false positives and false negatives.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80e5-a0f4-d18699b5558a"><li style="list-style-type:disc"><strong>Classification Reports</strong>: Generated detailed performance summaries for each class.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-805d-b3b3-c2725ac201b1"><li style="list-style-type:disc"><strong>Confusion Matrices</strong>: Analyzed true positive, false positive, true negative, and false negative rates for deeper insight into model behavior.</li></ul><p class="" dir="auto" id="1e359aaf-e804-806e-be8b-eb0e3a2f21b9">Special focus was placed on <strong>F1-score</strong> to maximize both precision and recall for the minority attrition class.</p><h2 class="" dir="auto" id="1e359aaf-e804-80a1-8f3a-ea63a0b3919b">6. Feature Importance Analysis</h2><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80fa-b7d0-dd423016f73d"><li style="list-style-type:disc"><strong>Identification</strong>: Feature importance was extracted primarily from ensemble models such as Random Forest and Gradient Boosting.</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80f6-ba2b-e2e08391d0a1"><li style="list-style-type:disc"><strong>Interpretation</strong>: Top factors influencing attrition included:<ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8007-b74d-efe463972190"><li style="list-style-type:circle">Overtime</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8007-b5c2-d9731b67cc09"><li style="list-style-type:circle">Stock Option Level</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80d7-abba-dbf5cf6332e6"><li style="list-style-type:circle">Job Level</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-8022-8b52-de665dd3954f"><li style="list-style-type:circle">Total Working Years</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-809b-9bc9-cba7d8630166"><li style="list-style-type:circle">Age</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80e9-82ad-f2d9ecf7943e"><li style="list-style-type:circle">Job Satisfaction</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80a4-a908-e76ef88ff57c"><li style="list-style-type:circle">Monthly Income</li></ul><ul class="bulleted-list" dir="auto" id="1e359aaf-e804-80fd-856a-cb86928de0df"><li style="list-style-type:circle">Years at Company</li></ul></li></ul><p class="" dir="auto" id="1e359aaf-e804-800f-8888-f67301a62bb8">These insights were used to formulate business recommendations to improve employee retention strategies.</p><p class="" dir="auto" id="1cc59aaf-e804-80fd-a399-dd91a12afe31">
 </p><blockquote class="block-color-gray_background quote-large" data-notion-highlight="gray_background" dir="auto" id="1e259aaf-e804-80ee-9901-dbf18707b6b5">💻 <strong>TOOLS</strong></blockquote><hr dir="auto" id="1e259aaf-e804-801a-a683-f4fc8d923eea"/><ul class="bulleted-list" dir="auto" id="1cc59aaf-e804-80f8-98bb-ef9f920e2d66"><li style="list-style-type:disc"><mark class="highlight-gray" data-notion-highlight="gray"><code><strong>Python</strong></code></mark> (<mark class="highlight-purple" data-notion-highlight="purple"><code><strong>Pandas</strong></code></mark><mark class="highlight-default" data-notion-highlight="default">, </mark><mark class="highlight-yellow" data-notion-highlight="yellow"><code><strong>numpy</strong></code></mark><mark class="highlight-default" data-notion-highlight="default">, </mark><mark class="highlight-teal" data-notion-highlight="teal"><code><strong>Matplotlib</strong></code></mark>, <mark class="highlight-blue" data-notion-highlight="blue"><code><strong>Seaborn</strong></code></mark><mark class="highlight-default" data-notion-highlight="default">,</mark><mark class="highlight-blue" data-notion-highlight="blue"><strong> </strong></mark><mark class="highlight-orange" data-notion-highlight="orange"><code><strong>Scikit-learn</strong></code></mark><mark class="highlight-default" data-notion-highlight="default"><strong>, </strong></mark><mark class="highlight-yellow" data-notion-highlight="yellow"><code><strong>imbalanced-learn</strong></code></mark><mark class="highlight-default" data-notion-highlight="default"><strong>, </strong></mark><mark class="highlight-blue" data-notion-highlight="blue"><code><strong>XGBoost</strong></code></mark><mark class="highlight-default" data-notion-highlight="default">) </mark></li></ul><ul class="bulleted-list" dir="auto" id="1cc59aaf-e804-8031-be69-eb68bbdbcc0d"><li style="list-style-type:disc"><mark class="highlight-orange" data-notion-highlight="orange"><code><strong>PowerPoint</strong></code></mark></li></ul><p class="" dir="auto" id="1e259aaf-e804-80a2-8669-e50dd9df6fb5">
@@ -295,12 +337,10 @@
 </p><p class="" dir="auto" id="1cc59aaf-e804-8048-83ac-ed2ef3a8882b">
 </p><p class="" dir="auto" id="1cc59aaf-e804-809a-a744-d551ddcec301">
 </p>
-        </div>
-
-        <div class="project-bottom-nav">
-            <a href="../index.html#projects">← Back to Projects</a>
-        </div>
-
-    </main>
+</div>
+<div class="project-bottom-nav">
+<a href="../index.html#projects">← Back to Projects</a>
+</div>
+</main>
 </body>
 </html>
