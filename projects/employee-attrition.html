@@ -81,28 +81,50 @@
             color: inherit;
         }
 
+        /* Exact text colors from the original Notion HTML export */
         .notion-migrated-content .highlight-purple {
-            color: #c994e8;
+            color: rgba(154, 107, 180, 1) !important;
         }
 
         .notion-migrated-content .highlight-yellow {
-            color: #d6b84d;
+            color: rgba(203, 148, 52, 1) !important;
         }
 
         .notion-migrated-content .highlight-teal {
-            color: #57bca8;
+            color: rgba(80, 148, 110, 1) !important;
         }
 
         .notion-migrated-content .highlight-blue {
-            color: #6aa9d9;
+            color: rgba(56, 125, 201, 1) !important;
         }
 
         .notion-migrated-content .highlight-orange {
-            color: #e9a15b;
+            color: rgba(210, 123, 45, 1) !important;
         }
 
         .notion-migrated-content .highlight-gray {
-            color: #b8b8b8;
+            color: rgba(125, 122, 117, 1) !important;
+        }
+
+        .notion-migrated-content .highlight-red {
+            color: rgba(207, 81, 72, 1) !important;
+        }
+
+        .notion-migrated-content .highlight-pink {
+            color: rgba(193, 76, 138, 1) !important;
+        }
+
+        /* Notion puts colored tool names inside mark > code > strong.
+           Force the color/boldness to survive any shared site CSS. */
+        .notion-migrated-content mark[class*="highlight-"] code,
+        .notion-migrated-content mark[class*="highlight-"] strong,
+        .notion-migrated-content mark[class*="highlight-"] code strong {
+            color: inherit !important;
+        }
+
+        .notion-migrated-content mark[class*="highlight-"] code strong,
+        .notion-migrated-content mark.highlight-purple strong {
+            font-weight: 750 !important;
         }
 
         .notion-migrated-content code {
@@ -166,6 +188,7 @@
         }
 
         .notion-migrated-content .slide-row {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
             gap: 13px;
             margin: 13px 0;
         }
@@ -206,84 +229,20 @@
             font-size: 12px;
         }
 
-
-        /* Restore Notion text colors more faithfully on the dark portfolio background. */
-        .notion-migrated-content mark[data-notion-highlight="default"] {
-            color: inherit !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content mark[data-notion-highlight="purple"] {
-            color: #c58bdc !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content mark[data-notion-highlight="yellow"] {
-            color: #d9b85c !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content mark[data-notion-highlight="teal"] {
-            color: #65b99a !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content mark[data-notion-highlight="blue"] {
-            color: #6da9df !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content mark[data-notion-highlight="orange"] {
-            color: #e39a58 !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content mark[data-notion-highlight="gray"] {
-            color: #aaa7a2 !important;
-            background: transparent !important;
-        }
-
-        .notion-migrated-content [data-notion-highlight="gray_background"],
-        .notion-migrated-content .block-color-gray_background {
-            background: #343434 !important;
-        }
-
-        /* Make presentation slides much larger: one slide per row on desktop. */
-        .notion-migrated-content .slide-row {
-            grid-template-columns: minmax(0, 1fr) !important;
-            gap: 24px !important;
-            margin: 24px 0 !important;
-        }
-
-        .notion-migrated-content .slide-row .column {
-            width: 100% !important;
-        }
-
-        .notion-migrated-content .slide-row figure.image {
-            width: 100%;
-            margin: 0 !important;
-        }
-
-        .notion-migrated-content .slide-row figure.image img {
-            width: 100% !important;
-            max-width: none !important;
-            height: auto !important;
-        }
-
         @media (max-width: 720px) {
-            .notion-migrated-content .column-list.cols-3,
-            .notion-migrated-content .column-list.cols-2 {
+            .notion-migrated-content .insight-row {
                 grid-template-columns: 1fr;
+            }
+
+            /* Keep the project presentation at two slides per row, as requested. */
+            .notion-migrated-content .slide-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+                gap: 8px;
             }
 
             .notion-migrated-content h1 {
                 font-size: 24px;
             }
-
-            .notion-migrated-content .slide-row {
-                grid-template-columns: 1fr !important;
-            }
-
         }
     </style>
 </head>
